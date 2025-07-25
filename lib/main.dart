@@ -130,7 +130,7 @@ typedef PiecePlaces = ({
   ({String piece, bool white}) piece,
   Set<({int x, int y})> places,
 });
-
+/*
 enum Piece {
   knife._(), whip._(),
   barricade._(),
@@ -142,11 +142,18 @@ enum Piece {
   mage._(), sage._(),
   lance._(), gryphon._();
   const Piece._();
-  static const Map<String, Piece> _pieces = {};
+  static const Map<String, Piece> _pieces = {
+    'K': knife,
+    'k': whip,
+    'B': barricade,
+    'A': ballista,
+    'a': cannon,
+
+  };
   factory Piece(String str) {
     return _pieces[str]!;
   }
-}
+}*/
 typedef GameState = ({
   int turnNumber,
   bool whiteTurn,
