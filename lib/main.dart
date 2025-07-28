@@ -82,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             )
                             .map((piece) {
                               return Positioned(
-                                top:
+                                bottom:
                                     constraints.biggest.shortestSide *
                                         (piece.place.y + 2) /
                                         21 +
